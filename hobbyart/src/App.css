@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-}
+  }
 
 .App-logo {
   height: 40vmin;
@@ -29,7 +29,7 @@
 }
 
 .container {
-  padding: 0 150px;
+  padding: 0 80px;
 }
 
 
