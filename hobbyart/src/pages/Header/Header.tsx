@@ -46,11 +46,11 @@ const Header: React.FC = () => {
       <div className="menu">
         <div className="container">
           <nav className="navigation">
-            <div>Каталог</div>
-            <div>Оплата и доставка</div>
-            <div>Бонусная программа</div>
-            <div>О компании</div>
-            <div>Контакты</div>
+            <div className="navigation_item">Каталог</div>
+            <div className="navigation_item">Оплата и доставка</div>
+            <div className="navigation_item">Бонусная программа</div>
+            <div className="navigation_item">О компании</div>
+            <div className="navigation_item">Контакты</div>
           </nav>
           <div className="logo">
             <a target="blank" href="https://">

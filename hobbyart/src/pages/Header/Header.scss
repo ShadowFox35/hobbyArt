@@ -51,8 +51,10 @@
 }
 
 .menu {
+  margin-top: 45px;
+  margin-bottom: 80px;
   display: flex;
-
+  width: 100%;
   .navigation {
     width: 700px;
     // height: 45px;
@@ -64,6 +66,12 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
+    &_item {
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
   }
   .logo {
     width: 122px;
