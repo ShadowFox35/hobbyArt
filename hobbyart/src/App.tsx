@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Header />
+      {/* меняется середина */}
       <Main />
       <Footer />
     </>

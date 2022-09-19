@@ -1,0 +1,53 @@
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &_list {
+    display: flex;
+  }
+
+  &_item {
+    display: flex;
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+      width: 340px;
+    }
+
+    &_img {
+      margin-right: 22px;
+      width: 110px;
+      height: 101px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .truck {
+      width: 105px;
+      height: 100px;
+      background-image: url('../../assets/vector1.svg');
+      background-repeat: no-repeat;
+    }
+    .knit {
+      width: 95;
+      height: 101px;
+      background-image: url('../../assets/vector2.svg');
+      background-repeat: no-repeat;
+    }
+    .money {
+      width: 100px;
+      height: 100px;
+      background-image: url('../../assets/vector3.svg');
+      background-repeat: no-repeat;
+    }
+  }
+}
