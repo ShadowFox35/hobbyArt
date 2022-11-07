@@ -1,0 +1,42 @@
+.good {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 266px;
+  height: 460px;
+
+  &_wrapper {
+    padding: 30px;
+  }
+
+  &_img {
+    width: 213px;
+    height: 213px;
+  }
+
+  &_btn-inactiv {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 45px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    background: #ffffff;
+    border-radius: 46px;
+    border: 1px solid #bdbdbd;
+    color: #cfa5a5;
+
+    &:hover {
+      border: 1px solid #976464;
+    }
+  }
+}

@@ -1,4 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+// import About from '../Main/About/About';
+// import Error from '../Main/Error/Error';
+// import Main from '../Main/Main';
+
 import Search from './Search';
 import Log from './Log';
 import Favorites from './Favorites';
@@ -17,28 +23,15 @@ const Header: React.FC = () => {
       <div className="header_info">
         <div className="container">
           <div className="info-item">
-            <img
-              src={phone}
-              alt="hobby art logo"
-              className="icon"
-            />
+            <img src={phone} alt="hobby art logo" className="icon" />
             +7 (924) 765 28 20
           </div>
           <div className="info-item">
-            <img
-              src={location}
-              alt="hobby art logo"
-              className="icon"
-            />
-            г. Якутск, ул. Петра Алексеева, д. 6, ТЦ
-            “Олонхо”
+            <img src={location} alt="hobby art logo" className="icon" />
+            г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”
           </div>
           <div className="info-item">
-            <img
-              src={clock}
-              alt="hobby art logo"
-              className="icon"
-            />
+            <img src={clock} alt="hobby art logo" className="icon" />
             Ежедневно с 10:00 до 19:00
           </div>
         </div>
@@ -46,20 +39,37 @@ const Header: React.FC = () => {
       <div className="menu">
         <div className="container">
           <nav className="navigation">
-            <div>Каталог</div>
-            <div>Оплата и доставка</div>
-            <div>Бонусная программа</div>
-            <div>О компании</div>
-            <div>Контакты</div>
+            <div className="navigation_item">
+              <Link className="navigation_item_link" to="/catalog">
+                Каталог
+              </Link>
+            </div>
+            <div className="navigation_item">
+              <Link className="navigation_item_link" to="/delivery">
+                Оплата и доставка
+              </Link>
+            </div>
+            <div className="navigation_item">
+              <Link className="navigation_item_link" to="/loyalty">
+                Бонусная программа
+              </Link>
+            </div>
+            <div className="navigation_item">
+              <Link className="navigation_item_link" to="/about">
+                О компании
+              </Link>
+            </div>
+            <div className="navigation_item">
+              <Link className="navigation_item_link" to="/contacts">
+                Контакты
+              </Link>
+            </div>
           </nav>
+
           <div className="logo">
-            <a target="blank" href="https://">
-              <img
-                src={logo}
-                alt="hobby art logo"
-                className="logo-image"
-              />
-            </a>
+            <Link to="/">
+              <img src={logo} alt="hobby art logo" className="logo-image" />
+            </Link>
           </div>
           <div className="options">
             <Search />
