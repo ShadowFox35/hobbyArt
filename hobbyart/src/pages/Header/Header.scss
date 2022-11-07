@@ -22,11 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(
-      102.48deg,
-      #976464 -29.03%,
-      #cfa5a5 97.75%
-    );
+    background: linear-gradient(102.48deg, #976464 -29.03%, #cfa5a5 97.75%);
 
     .container {
       font-family: 'Gotham Pro', sans-serif;
@@ -61,15 +57,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
     &_item {
       &:hover {
         text-decoration: underline;
         cursor: pointer;
+      }
+      &_link {
+        text-decoration: none;
+        color: #424242;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
       }
     }
   }

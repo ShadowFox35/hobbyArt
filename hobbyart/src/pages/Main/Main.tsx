@@ -14,6 +14,7 @@ import GoodsSlider from './GoodsSlider';
 import Instagram from './Instagram';
 
 const Main: React.FC = () => {
+  document.title = 'Главная';
   return (
     <div className="main">
       <div className="main-container">
@@ -26,51 +27,35 @@ const Main: React.FC = () => {
           <div className="advantages_list">
             <div className="advantages_item">
               <div className="advantages_item_img truck">
-                <img
-                  src={truck}
-                  alt="hobby art truck"
-                  className="adv-image"
-                />
+                <img src={truck} alt="hobby art truck" className="adv-image" />
               </div>
               <div className="advantages_item_info">
                 <div className="title">Поставщики</div>
                 <div className="text">
-                  Мы работаем только с надежными и
-                  проверенными поставщиками товаров для
-                  творчества
+                  Мы работаем только с надежными и проверенными поставщиками товаров для творчества
                 </div>
               </div>
             </div>
             <div className="advantages_item">
               <div className="advantages_item_img knit">
-                <img
-                  src={knit}
-                  alt="hobby art knit"
-                  className="adv-image"
-                />
+                <img src={knit} alt="hobby art knit" className="adv-image" />
               </div>
               <div className="advantages_item_info">
                 <div className="title">Товары</div>
                 <div className="text">
-                  Мы привозим актуальные и новые товары,
-                  инструменты для вашего творчества по
-                  низким ценам
+                  Мы привозим актуальные и новые товары, инструменты для вашего творчества по низким
+                  ценам
                 </div>
               </div>
             </div>
             <div className="advantages_item">
               <div className="advantages_item_img money">
-                <img
-                  src={money}
-                  alt="hobby art money"
-                  className="adv-image"
-                />
+                <img src={money} alt="hobby art money" className="adv-image" />
               </div>
               <div className="advantages_item_info">
                 <div className="title">Бонусы</div>
                 <div className="text">
-                  У нас действует накопительная бонусная
-                  система скидок. Дарим в день рождения 500
+                  У нас действует накопительная бонусная система скидок. Дарим в день рождения 500
                   бонусных рублей
                 </div>
               </div>
