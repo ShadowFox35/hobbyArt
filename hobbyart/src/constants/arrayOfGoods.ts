@@ -1,4 +1,4 @@
-import { goodsElemType } from '../../types/types';
+import { goodsElemType } from '../types/types';
 
 export const arrayOfGoods: goodsElemType[] = [
   {

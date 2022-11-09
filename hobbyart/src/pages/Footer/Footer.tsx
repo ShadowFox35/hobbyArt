@@ -9,11 +9,13 @@ import clock from '../../assets/clock.svg';
 import inst from '../../assets/inst.svg';
 
 import SubscribeForm from './SubscribeForm';
+import { footerNav } from '../../constants/footerNav';
+import { footerNavElemType } from '../../types/types';
 
 const Footer: React.FC = () => {
   return (
     <div className="footer">
-      <div className="container">
+      <div className=" footer_wrapper container">
         <div className="footer_contacts">
           <div className="logo">
             <Link to="/">
@@ -23,87 +25,39 @@ const Footer: React.FC = () => {
 
           <div className="footer_info">
             <div className="info-item">
-              <img src={phone} alt="hobby art logo" className="icon" />
+              <img src={phone} alt="hobby art logo" className="info-item_icon" />
               +7 (924) 765 28 20
             </div>
             <div className="info-item">
-              <img src={location} alt="hobby art logo" className="icon" />
+              <img src={location} alt="hobby art logo" className="info-item_icon" />
               г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”
             </div>
             <div className="info-item">
-              <img src={clock} alt="hobby art logo" className="icon" />
+              <img src={clock} alt="hobby art logo" className="info-item_icon" />
               Ежедневно с 10:00 до 19:00
             </div>
             <div className="info-item">
-              <img src={inst} alt="hobby art logo" className="icon" />
+              <img src={inst} alt="hobby art logo" className="info-item_icon" />
               @hobbyart_dv
             </div>
           </div>
         </div>
 
         <nav className="footer_nav">
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/catalog">
-              Каталог
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/stock">
-              Акции
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/loyalty">
-              Бонусная программа
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/catalog">
-              Новинки
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/catalog">
-              Популярное
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/delivery">
-              Оплата и доставка
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/delivery">
-              Гарантия и возврат
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/about">
-              О компании
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/about">
-              Преимущества
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/contacts">
-              Контакты
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/contacts">
-              Личный кабинет
-            </Link>
-          </div>
+          {footerNav.map((elem: footerNavElemType) => (
+            <div className="navigation_item">
+              <Link className="navigation_item_link" to="/catalog">
+                {elem.text}
+              </Link>
+            </div>
+          ))}
         </nav>
 
         <div className="footer_subscribe">
-          <p>Узнавайте первым о новинках и новостях</p>
+          <p className='footer_subscribe_title'>Узнавайте первым о новинках и новостях</p>
           <SubscribeForm />
-          <p>Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
-          <p>
+          <p className='footer_subscribe_notes'>Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+          <p className='footer_subscribe_rights'>
             © 2012-2021 ХОББИ АРТ — официальный интернет-магазин товаров для хобби. Все права
             защищены. Условия использования и политика конфиденциальности
           </p>
