@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Catalog.scss';
 
-import { categoriesElemType, goodsElemType } from './types/types';
-import { categories } from './Goods/constants/categories';
-import { arrayOfGoods } from './Goods/constants/listOfGoods';
+import { categoriesElemType, goodsElemType } from '../../types/types';
+import { categories } from '../../constants/categories';
+import { arrayOfGoods } from '../../constants/arrayOfGoods';
 
 import Good from './Goods/Good';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { goodsElemType } from '../types/types';
+import { goodsElemType } from '../../../types/types';
 
 import Basket from '../../../assets/basket_icon.svg';
 

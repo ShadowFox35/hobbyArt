@@ -21,7 +21,7 @@ const Header: React.FC = () => {
   return (
     <div className="header">
       <div className="header_info">
-        <div className="container">
+        <div className="header_info_wrapper container ">
           <div className="info-item">
             <img src={phone} alt="hobby art logo" className="icon" />
             +7 (924) 765 28 20
@@ -36,49 +36,49 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="menu">
-        <div className="container">
-          <nav className="navigation">
-            <div className="navigation_item">
-              <Link className="navigation_item_link" to="/catalog">
-                Каталог
-              </Link>
-            </div>
-            <div className="navigation_item">
-              <Link className="navigation_item_link" to="/delivery">
-                Оплата и доставка
-              </Link>
-            </div>
-            <div className="navigation_item">
-              <Link className="navigation_item_link" to="/loyalty">
-                Бонусная программа
-              </Link>
-            </div>
-            <div className="navigation_item">
-              <Link className="navigation_item_link" to="/about">
-                О компании
-              </Link>
-            </div>
-            <div className="navigation_item">
-              <Link className="navigation_item_link" to="/contacts">
-                Контакты
-              </Link>
-            </div>
-          </nav>
-
-          <div className="logo">
-            <Link to="/">
-              <img src={logo} alt="hobby art logo" className="logo-image" />
+      <div className="menu container">
+        {/* <div className="container"> */}
+        <nav className="navigation">
+          <div className="navigation_item">
+            <Link className="navigation_item_link" to="/catalog">
+              Каталог
             </Link>
           </div>
-          <div className="options">
-            <Search />
-            <Log />
-            <Favorites />
-            <Basket />
+          <div className="navigation_item">
+            <Link className="navigation_item_link" to="/delivery">
+              Оплата и доставка
+            </Link>
           </div>
+          <div className="navigation_item">
+            <Link className="navigation_item_link" to="/loyalty">
+              Бонусная программа
+            </Link>
+          </div>
+          <div className="navigation_item">
+            <Link className="navigation_item_link" to="/about">
+              О компании
+            </Link>
+          </div>
+          <div className="navigation_item">
+            <Link className="navigation_item_link" to="/contacts">
+              Контакты
+            </Link>
+          </div>
+        </nav>
+
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="hobby art logo" className="logo-image" />
+          </Link>
+        </div>
+        <div className="options">
+          <Search />
+          <Log />
+          <Favorites />
+          <Basket />
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 };

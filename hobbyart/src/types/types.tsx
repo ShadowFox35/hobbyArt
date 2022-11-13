@@ -14,3 +14,14 @@ export interface categoriesElemType {
   category: string;
   url: string;
 }
+
+export interface advantagesElemType {
+  class: string;
+  url: string;
+  title: string;
+  text: string;
+}
+
+export interface footerNavElemType {
+  text: string;
+}
