@@ -29,9 +29,6 @@ export const footerNav: footerNavElemType[] = [
     text: 'Преимущества',
   },
   {
-    text: 'Контакты',
-  },
-  {
     text: 'Личный кабинет',
   },
 ];

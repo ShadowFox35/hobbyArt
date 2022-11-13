@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             </Link>
           </div>
 
-          <div className="footer_info">
+          <div className="footer_contacts_info">
             <div className="info-item">
               <img src={phone} alt="hobby art logo" className="info-item_icon" />
               +7 (924) 765 28 20
@@ -54,10 +54,12 @@ const Footer: React.FC = () => {
         </nav>
 
         <div className="footer_subscribe">
-          <p className='footer_subscribe_title'>Узнавайте первым о новинках и новостях</p>
+          <p className="footer_subscribe_title">Узнавайте первым о новинках и новостях</p>
           <SubscribeForm />
-          <p className='footer_subscribe_notes'>Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
-          <p className='footer_subscribe_rights'>
+          <p className="footer_subscribe_notes">
+            Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+          </p>
+          <p className="footer_subscribe_rights">
             © 2012-2021 ХОББИ АРТ — официальный интернет-магазин товаров для хобби. Все права
             защищены. Условия использования и политика конфиденциальности
           </p>

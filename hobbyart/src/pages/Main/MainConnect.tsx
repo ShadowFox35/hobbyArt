@@ -1,13 +1,27 @@
 import React from 'react';
 import './Main.scss';
 
-// import basket_icon from '../../assets/basket_icon.svg';
+import backimg from '../../assets/connect_back.svg';
 
 const MainConnect: React.FC = () => {
   return (
-    <button className="basket-btn">
-      <div className="wrapper"></div>
-    </button>
+    <div className="main-connect">
+      <div className="main-connect_back">
+        <img src={backimg} alt="hobby art macrametr" className="main-slider_img" />
+        <div className="main-connect_wrapper">
+          <div className="title">Есть вопрос? Мы перезвоним!</div>
+          <div className="main-connect_form">
+            {/* сделать формы компонентами */}
+            <button></button>
+            <button></button>
+            <button>Отправить</button>
+          </div>
+          <div className="main-connect_note">
+            *нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
