@@ -42,32 +42,12 @@ const Header: React.FC = () => {
         {/* <div className="container"> */}
 
         <nav className="navigation">
-          {headerNav.map((elem: navElemType) => (
-            <div className="navigation_item">
+          {headerNav.map((elem: navElemType, index:number) => (
+            <div className="navigation_item" key={index}>
               <Link className="navigation_item_link" to={elem.link}>
                 {elem.text}
               </Link>
             </div>
-            // // {/* <div className="navigation_item">
-            //   <Link className="navigation_item_link" to="/delivery">
-            //     Оплата и доставка
-            //   </Link>
-            // </div>
-            // <div className="navigation_item">
-            //   <Link className="navigation_item_link" to="/loyalty">
-            //     Бонусная программа
-            //   </Link>
-            // </div>
-            // <div className="navigation_item">
-            //   <Link className="navigation_item_link" to="/about">
-            //     О компании
-            //   </Link>
-            // </div>
-            // <div className="navigation_item">
-            //   <Link className="navigation_item_link" to="/contacts">
-            //     Контакты
-            //   </Link>
-            // </div> */}
           ))}
         </nav>
 

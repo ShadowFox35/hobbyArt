@@ -44,8 +44,8 @@ const Footer: React.FC = () => {
         </div>
 
         <nav className="footer_nav">
-          {footerNav.map((elem: navElemType) => (
-            <div className="navigation_item">
+          {footerNav.map((elem: navElemType, index:number) => (
+            <div className="navigation_item" key={index}>
               <Link className="navigation_item_link" to={elem.link}>
                 {elem.text}
               </Link>
