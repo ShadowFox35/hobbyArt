@@ -10,7 +10,7 @@ import inst from '../../assets/inst.svg';
 
 import SubscribeForm from './SubscribeForm';
 import { footerNav } from '../../constants/footerNav';
-import { footerNavElemType } from '../../types/types';
+import { navElemType } from '../../types/types';
 
 const Footer: React.FC = () => {
   return (
@@ -44,9 +44,9 @@ const Footer: React.FC = () => {
         </div>
 
         <nav className="footer_nav">
-          {footerNav.map((elem: footerNavElemType) => (
-            <div className="navigation_item">
-              <Link className="navigation_item_link" to="/catalog">
+          {footerNav.map((elem: navElemType, index:number) => (
+            <div className="navigation_item" key={index}>
+              <Link className="navigation_item_link" to={elem.link}>
                 {elem.text}
               </Link>
             </div>

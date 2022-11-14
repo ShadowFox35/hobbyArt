@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 24.35px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -89,6 +89,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  &_title {
+    font-family: 'Spectral SC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 43px;
+    text-transform: uppercase;
+  }
 
   &_list {
     display: flex;

@@ -23,10 +23,10 @@ const Main: React.FC = () => {
         <MainCatalog />
 
         <div className="advantages">
-          <h2>Хобби арт: 9 лет на рынке</h2>
+          <h2 className='advantages_title'>Хобби арт: 9 лет на рынке</h2>
           <div className="advantages_list">
-            {advantages.map((elem: advantagesElemType) => (
-              <div className="advantages_item">
+            {advantages.map((elem: advantagesElemType, index:number) => (
+              <div className="advantages_item" key={index}>
                 <div className={` advantages_item_img ${elem.class}`}>
                   <img src={elem.url} alt={`hobby art ${elem.class}`} className="adv-image" />
                 </div>

@@ -15,7 +15,7 @@ const Catalog: React.FC = () => {
       <nav className="catalog_navigation">
         <div className="catalog_navigation_item">
           {categories.map((good: categoriesElemType, index: number) => (
-            <div className="catalog_navigation_item_img ">
+            <div className="catalog_navigation_item_img" key={index}>
               <img
                 src={`${process.env.PUBLIC_URL}/${good.url}`}
                 alt={`${good.category}`}

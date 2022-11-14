@@ -16,6 +16,8 @@ import logo from '../../assets/main_logo.svg';
 import phone from '../../assets/phone.svg';
 import location from '../../assets/location.svg';
 import clock from '../../assets/clock.svg';
+import { navElemType } from '../../types/types';
+import { headerNav } from '../../constants/headerNav';
 
 const Header: React.FC = () => {
   return (
@@ -38,32 +40,15 @@ const Header: React.FC = () => {
       </div>
       <div className="menu container">
         {/* <div className="container"> */}
+
         <nav className="navigation">
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/catalog">
-              Каталог
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/delivery">
-              Оплата и доставка
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/loyalty">
-              Бонусная программа
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/about">
-              О компании
-            </Link>
-          </div>
-          <div className="navigation_item">
-            <Link className="navigation_item_link" to="/contacts">
-              Контакты
-            </Link>
-          </div>
+          {headerNav.map((elem: navElemType, index:number) => (
+            <div className="navigation_item" key={index}>
+              <Link className="navigation_item_link" to={elem.link}>
+                {elem.text}
+              </Link>
+            </div>
+          ))}
         </nav>
 
         <div className="logo">
@@ -78,6 +63,7 @@ const Header: React.FC = () => {
           <Basket />
         </div>
       </div>
+
       {/* </div> */}
     </div>
   );
