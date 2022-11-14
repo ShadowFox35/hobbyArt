@@ -22,6 +22,8 @@ export interface advantagesElemType {
   text: string;
 }
 
-export interface footerNavElemType {
+export interface navElemType {
   text: string;
+  link: string;
 }
+
