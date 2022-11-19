@@ -3,7 +3,7 @@ import React from 'react';
 import './Main.scss';
 
 import MainCatalog from './MainCatalog';
-import MainConnect from './MainConnect';
+import MainConnect from './MainConnect/MainConnect';
 import MainSlider from './MainSlider';
 import MainSwitcher from './MainSwitcher';
 import GoodsSlider from './GoodsSlider';

@@ -1,7 +1,11 @@
 import React from 'react';
-import './Main.scss';
+import './MainConnect.scss';
 
-import backimg from '../../../assets/connect_back.svg';
+import backimg from '../../../../assets/connect_back.svg';
+
+import EnterNameForm from './EnterNameForm';
+import EnterPhoneForm from './EnterPhoneForm';
+import SendButton from './SendButton';
 
 const MainConnect: React.FC = () => {
   return (
@@ -12,13 +16,13 @@ const MainConnect: React.FC = () => {
           <div className="title">Есть вопрос? Мы перезвоним!</div>
           <div className="main-connect_form">
             {/* сделать формы компонентами */}
-            <button></button>
-            <button></button>
-            <button>Отправить</button>
+            <EnterNameForm />
+            <EnterPhoneForm />
+            <SendButton />
           </div>
-          <div className="main-connect_note">
-            *нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
-          </div>
+          {/* <div className="main-connect_note">
+            *нажимая на кнопку, вы соглашаетесь <br /> с политикой конфиденциальности
+          </div> */}
         </div>
       </div>
     </div>
