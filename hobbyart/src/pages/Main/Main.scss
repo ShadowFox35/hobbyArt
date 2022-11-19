@@ -22,6 +22,12 @@
   line-height: 24.35px;
   text-transform: uppercase;
   color: #ffffff;
+  &:hover {
+    background: linear-gradient(102.48deg, #7b4646 -29.03%, #bf9191 97.75%);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 428.797px;
+    cursor: pointer;
+  }
 }
 
 .main-slider {

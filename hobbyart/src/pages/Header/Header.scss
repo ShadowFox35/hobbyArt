@@ -33,6 +33,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &_text {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
   .icon {
     width: 15px;
     height: 15px;
@@ -111,7 +116,10 @@
       }
 
       &:hover {
-        cursor: pointer;
+        &:hover {
+          border: 1px solid #976464;
+          cursor: pointer;
+        }
       }
 
       .search_icon {
@@ -185,6 +193,11 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
+      &:hover {
+        border: 1px solid #976464;
+        color: #976464;
+        cursor: pointer;
+      }
 
       .wrapper {
         width: 100%;
@@ -214,6 +227,11 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
+      &:hover {
+        border: 1px solid #976464;
+        color: #976464;
+        cursor: pointer;
+      }
 
       .wrapper {
         width: 100%;
@@ -243,6 +261,11 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
+      &:hover {
+        border: 1px solid #976464;
+        color: #976464;
+        cursor: pointer;
+      }
 
       .wrapper {
         width: 100%;
