@@ -3,14 +3,14 @@ import React from 'react';
 import './Main.scss';
 
 import MainCatalog from './MainCatalog';
-import MainConnect from './MainConnect';
+import MainConnect from './MainConnect/MainConnect';
 import MainSlider from './MainSlider';
 import MainSwitcher from './MainSwitcher';
 import GoodsSlider from './GoodsSlider';
 import Instagram from './Instagram';
 
-import { advantages } from '../../constants/advantages';
-import { advantagesElemType } from '../../types/types';
+import { advantages } from '../../../constants/advantages';
+import { advantagesElemType } from '../../../types/types';
 
 const Main: React.FC = () => {
   document.title = 'Главная';
@@ -23,9 +23,9 @@ const Main: React.FC = () => {
         <MainCatalog />
 
         <div className="advantages">
-          <h2 className='advantages_title'>Хобби арт: 9 лет на рынке</h2>
+          <h2 className="advantages_title">Хобби арт: 9 лет на рынке</h2>
           <div className="advantages_list">
-            {advantages.map((elem: advantagesElemType, index:number) => (
+            {advantages.map((elem: advantagesElemType, index: number) => (
               <div className="advantages_item" key={index}>
                 <div className={` advantages_item_img ${elem.class}`}>
                   <img src={elem.url} alt={`hobby art ${elem.class}`} className="adv-image" />
