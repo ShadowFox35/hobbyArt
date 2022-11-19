@@ -1,8 +1,8 @@
 import React from 'react';
 import './Main.scss';
 
-import slidergood from '../../assets/main_slider_good.svg';
-import backimg from '../../assets/main_back.svg';
+import slidergood from '../../../assets/main_slider_good.svg';
+import backimg from '../../../assets/main_back.svg';
 
 // import basket_icon from '../../assets/basket_icon.svg';
 

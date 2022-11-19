@@ -1,7 +1,7 @@
 import React from 'react';
 import './Main.scss';
 
-import backimg from '../../assets/connect_back.svg';
+import backimg from '../../../assets/connect_back.svg';
 
 const MainConnect: React.FC = () => {
   return (
