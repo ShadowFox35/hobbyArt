@@ -1,0 +1,121 @@
+.main-slider {
+  &_back {
+    background: linear-gradient(101.38deg, #ddddbf 3.06%, #ececd5 85.68%);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  &_wrapper {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    transition: left 1s ease 0s;
+
+    &_item {
+      position: relative;
+      min-width: 100%;
+    }
+  }
+  &_good-image {
+    position: absolute;
+    z-index: 1;
+    left: 130px;
+    top: 11px;
+    width: 571.09px;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .second {
+      height: 420px;
+    }
+  }
+
+  &_img {
+    width: 100%;
+  }
+
+  &_info {
+    position: absolute;
+    z-index: 1;
+    left: 820px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .title {
+      margin-bottom: 48px;
+      font-family: 'Spectral SC', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 43px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #424242;
+    }
+    .text {
+      width: 446px;
+      height: 99px;
+      margin-bottom: 48px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      align-items: center;
+      color: rgba(94, 92, 90, 0.8);
+    }
+  }
+
+  &_pagination {
+    position: absolute;
+    z-index: 1;
+    left: 1349px;
+    top: 398px;
+    display: flex;
+    gap: 2px;
+    .pagination-prev {
+      width: 30px;
+      height: 30px;
+      background-image: url('../../../../assets/prev.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        cursor: pointer;
+        filter: invert(100%) sepia(68%) saturate(1831%) hue-rotate(290deg) brightness(90%)
+          contrast(70%);
+      }
+    }
+    .pagination-next {
+      width: 30px;
+      height: 30px;
+      background-image: url('../../../../assets/next.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        cursor: pointer;
+        filter: invert(100%) sepia(68%) saturate(1831%) hue-rotate(290deg) brightness(90%)
+          contrast(70%);
+      }
+    }
+    .slide-number {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 142.2%;
+      color: #424242;
+      align-self: center;
+    }
+  }
+}

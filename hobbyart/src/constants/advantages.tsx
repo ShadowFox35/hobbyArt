@@ -3,7 +3,7 @@ import { advantagesElemType } from '../types/types';
 export const advantages: advantagesElemType[] = [
   {
     class: 'truck',
-    url: 'assets/advantages/truck.svg',
+    url: 'assets/mainSlider/truck.svg',
     title: 'Поставщики',
     text: 'Мы работаем только с надежными и проверенными поставщиками товаров для творчества',
   },
