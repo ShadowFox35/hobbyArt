@@ -1,19 +1,27 @@
 .main-connect {
-  .title {
-    font-family: 'Spectral SC';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 43px;
-    color: #424242;
-    margin-bottom: 64px;
-  }
+  width: 1312px;
+  height: 350px;
 
   &_wrapper {
+    width: 100%;
+    background-image: url('../../../../assets/connect_back.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .title {
+      padding-top: 104px;
+      font-family: 'Spectral SC';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 43px;
+      color: #424242;
+      margin-bottom: 64px;
+    }
   }
 
   &_form {
@@ -86,7 +94,7 @@
     .btn-wrapper {
       display: flex;
       flex-direction: column;
-      margin-bottom: 64px;
+      // padding-bottom: 64px;
       .form-btn {
         display: flex;
         flex-direction: row;

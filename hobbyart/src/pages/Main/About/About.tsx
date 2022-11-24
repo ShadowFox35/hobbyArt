@@ -1,8 +1,6 @@
 import React from 'react';
 import './About.scss';
 
-// import basket_icon from '../../assets/basket_icon.svg';
-
 const About: React.FC = () => {
   document.title = 'О компании';
   return (
