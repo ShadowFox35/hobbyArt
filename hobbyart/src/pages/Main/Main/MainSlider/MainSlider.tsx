@@ -3,8 +3,9 @@ import './MainSlider.scss';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 import backing from '../../../../assets/main_back.svg';
-import { mainSlides } from '../../../../constants/mainSlides';
-import { mainSlidesElemType } from '../../../../types/types';
+
+import { mainSlidesArrayElemType } from '../../../../types/types';
+import { mainSlidesArray } from '../../../../constants/mainSlides';
 
 const MainSlider: React.FC = () => {
   const [sledeNum, setSledeNum] = useState<number>(1);
@@ -26,7 +27,7 @@ const MainSlider: React.FC = () => {
         <img src={backing} alt="hobby art macrametr" className="main-slider_img" />
 
         <div className="main-slider_wrapper" style={{ left: -1 * (sledeNum - 1) + '00%' }}>
-          {mainSlides.map((elem: mainSlidesElemType, index: number) => (
+          {mainSlidesArray.map((elem: mainSlidesArrayElemType, index: number) => (
             <div className="main-slider_wrapper_item">
               <div className="main-slider_good-image">
                 <img src={elem.url} alt="hobby art macrametr" className={`image ${elem.class}`} />

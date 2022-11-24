@@ -5,8 +5,8 @@ import './Main.scss';
 import MainCatalog from './MainCatalog';
 import MainConnect from './MainConnect/MainConnect';
 import MainSlider from './MainSlider/MainSlider';
-import MainSwitcher from './MainSwitcher';
-import GoodsSlider from './GoodsSlider';
+import MainSwitcher from './MainSlider/MainSwitcher/MainSwitcher';
+import GoodsSlider from './GoodsSlider/GoodsSlider';
 import Instagram from './Instagram';
 
 import { advantages } from '../../../constants/advantages';

@@ -27,9 +27,16 @@ export interface navElemType {
   link: string;
 }
 
-export interface mainSlidesElemType {
+export interface mainSlidesArrayElemType {
   class: string;
   url: string;
   title: string;
   text: string;
+}
+
+export interface GoodsSliderElemType {
+  // class: string;
+  url: string;
+  title: string;
+  // text: string;
 }

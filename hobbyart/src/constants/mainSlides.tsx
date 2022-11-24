@@ -1,6 +1,6 @@
-import { mainSlidesElemType } from '../types/types';
+import { mainSlidesArrayElemType } from '../types/types';
 
-export const mainSlides: mainSlidesElemType[] = [
+export const mainSlidesArray: mainSlidesArrayElemType[] = [
   {
     class: 'first',
     url: 'assets/mainSlider/first_slide.svg',
