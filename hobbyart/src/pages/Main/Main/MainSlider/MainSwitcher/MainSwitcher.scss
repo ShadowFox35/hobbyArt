@@ -1,54 +1,76 @@
-.switch {
+.switcher-wrapper {
   margin-top: 60px;
   margin-bottom: 60px;
-  position: relative;
-  display: inline-block;
-  width: 72px;
-  height: 34px;
-}
+  display: flex;
+  gap: 40px;
 
-.switch input {
-  display: none;
-}
+  .title {
+    font-family: 'Spectral SC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #5e5c5a;
+  }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #e0dfdf;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
+  .active {
+    background: linear-gradient(102.48deg, #976464 -29.03%, #cfa5a5 97.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-.slider:before {
-  position: absolute;
-  content: '';
-  height: 34px;
-  width: 34px;
-  background: linear-gradient(102.48deg, #976464 -29.03%, #cfa5a5 97.75%);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 72px;
+    height: 34px;
+  }
 
-input:checked + .slider {
-  background-color: #e0dfdf;
-}
+  .switch input {
+    display: none;
+  }
 
-// input:focus + .slider {
-//   box-shadow: 0 0 1px #0765b1;
-// }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e0dfdf;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
 
-input:checked + .slider:before {
-  transform: translateX(37px);
-}
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 34px;
+    width: 34px;
+    background: linear-gradient(102.48deg, #976464 -29.03%, #cfa5a5 97.75%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
 
-.slider.round {
-  border-radius: 34px;
-}
+  input:checked + .slider {
+    background-color: #e0dfdf;
+  }
 
-.slider.round:before {
-  border-radius: 34px;
+  // input:focus + .slider {
+  //   box-shadow: 0 0 1px #0765b1;
+  // }
+
+  input:checked + .slider:before {
+    transform: translateX(37px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 34px;
+  }
 }

@@ -3,10 +3,14 @@ import './MainSwitcher.scss';
 
 const MainSwitcher: React.FC = () => {
   return (
-    <label className="switch">
-      <input type="checkbox" />
-      <span className="slider round"></span>
-    </label>
+    <div className="switcher-wrapper">
+      <div className="title active">Новинки</div>
+      <label className="switch">
+        <input type="checkbox" />
+        <span className="slider round"></span>
+      </label>
+      <div className="title">Популярное</div>
+    </div>
   );
 };
 
