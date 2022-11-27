@@ -35,8 +35,8 @@ export const GoodsSliderNew: GoodsSliderElemType[] = [
 export const GoodsSliderPopular: GoodsSliderElemType[] = [
   {
     // class: 'first',
-    url: 'assets/goodsSlider/hookAddi.jpg',
-    title: 'Крючок для вязяния Addi',
+    url: 'assets/goodsSlider/popular/hookAddi.jpg',
+    title: 'Крючки для вязания Addi',
   },
 
   {
@@ -47,19 +47,19 @@ export const GoodsSliderPopular: GoodsSliderElemType[] = [
 
   {
     // class: 'first',
-    url: 'assets/goodsSlider/yarnAlize.jpg',
-    title: 'Пряжа Alize',
+    url: 'assets/goodsSlider/scissors.jpg',
+    title: 'Ножницы вышивальные «Цапельки»',
   },
 
   {
     // class: 'first',
-    url: 'assets/goodsSlider/bambooRings.jpg',
-    title: 'Кольца бамбук',
+    url: 'assets/goodsSlider/scissors.jpg',
+    title: 'Ножницы вышивальные «Цапельки»',
   },
 
   {
     // class: 'first',
-    url: 'assets/goodsSlider/yarnZefirka.jpg',
-    title: 'Трикотажная пряжа Zефирка',
+    url: 'assets/goodsSlider/scissors.jpg',
+    title: 'Ножницы вышивальные «Цапельки»',
   },
 ];

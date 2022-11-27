@@ -30,6 +30,8 @@
   }
 
   &_item {
+    position: relative;
+
     &_img {
       width: 271px;
       height: 440px;
@@ -40,9 +42,15 @@
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 22px;
-      // color: #ffffff;
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      &:hover {
+        cursor: pointer;
+        color: #976464;
+      }
     }
   }
 }
