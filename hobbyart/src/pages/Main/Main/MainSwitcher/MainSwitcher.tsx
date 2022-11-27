@@ -8,6 +8,8 @@ interface MainSwitcherProps {
   setSwitchStatus: Function;
   goodsArray: GoodsSliderElemType[];
   setGoodsArray: Function;
+  sledeNum: number;
+  setSledeNum: Function;
 }
 
 const MainSwitcher: React.FC<MainSwitcherProps> = ({
@@ -15,11 +17,14 @@ const MainSwitcher: React.FC<MainSwitcherProps> = ({
   setSwitchStatus,
   goodsArray,
   setGoodsArray,
+  sledeNum,
+  setSledeNum,
 }) => {
   const [newGoodsClass, setNewGoodsClass] = useState<string>('title active');
   const [popGoodsClass, setPopGoodsClass] = useState<string>('title');
 
   const switchSlider = () => {
+    setSledeNum(1);
     if (switchStatus) {
       setSwitchStatus(false);
       setGoodsArray(GoodsSliderPopular);
