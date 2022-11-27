@@ -1,3 +1,56 @@
 .goods-slider {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+
+  .pagination-prev {
+    width: 30px;
+    height: 30px;
+    background-image: url('../../../../assets/prev.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      cursor: pointer;
+      filter: invert(100%) sepia(68%) saturate(1831%) hue-rotate(290deg) brightness(90%)
+        contrast(70%);
+    }
+  }
+  .pagination-next {
+    width: 30px;
+    height: 30px;
+    background-image: url('../../../../assets/next.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      cursor: pointer;
+      filter: invert(100%) sepia(68%) saturate(1831%) hue-rotate(290deg) brightness(90%)
+        contrast(70%);
+    }
+  }
+
+  &_item {
+    position: relative;
+
+    &_img {
+      width: 271px;
+      height: 440px;
+      border-radius: 20px;
+    }
+
+    &_title {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      &:hover {
+        cursor: pointer;
+        color: #976464;
+      }
+    }
+  }
 }

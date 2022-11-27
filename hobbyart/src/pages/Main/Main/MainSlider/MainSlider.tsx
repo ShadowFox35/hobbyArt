@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './MainSlider.scss';
 import 'react-alice-carousel/lib/alice-carousel.css';
 

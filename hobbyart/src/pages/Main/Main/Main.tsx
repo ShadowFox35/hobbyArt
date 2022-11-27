@@ -1,25 +1,35 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import './Main.scss';
 
 import MainCatalog from './MainCatalog';
 import MainConnect from './MainConnect/MainConnect';
 import MainSlider from './MainSlider/MainSlider';
-import MainSwitcher from './MainSlider/MainSwitcher/MainSwitcher';
+
 import GoodsSlider from './GoodsSlider/GoodsSlider';
 import Instagram from './Instagram';
 
 import { advantages } from '../../../constants/advantages';
-import { advantagesElemType } from '../../../types/types';
+import { advantagesElemType, GoodsSliderElemType } from '../../../types/types';
+import MainSwitcher from './MainSwitcher/MainSwitcher';
+import { GoodsSliderNew } from '../../../constants/GoodsSliderArray';
 
 const Main: React.FC = () => {
   document.title = 'Главная';
+
+  const [switchStatus, setSwitchStatus] = useState<boolean>(true);
+  const [goodsArray, setGoodsArray] = useState<GoodsSliderElemType[]>(GoodsSliderNew);
+
   return (
     <div className="main">
       <div className="main-container">
         <MainSlider />
-        <MainSwitcher />
-        <GoodsSlider />
+        <MainSwitcher
+          switchStatus={switchStatus}
+          setSwitchStatus={setSwitchStatus}
+          goodsArray={goodsArray}
+          setGoodsArray={setGoodsArray}
+        />
+        <GoodsSlider switchStatus={switchStatus} goodsArray={goodsArray} />
         <MainCatalog />
 
         <div className="advantages">
