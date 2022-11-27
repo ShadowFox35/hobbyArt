@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Search from './Search';
 import Log from './Log';
 import Favorites from './Favorites';
-import Basket from './Basket';
+import BasketBtn from '../Basket/BasketBtn';
 
 import './Header.scss';
 
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
           <Search />
           <Log />
           <Favorites />
-          <Basket />
+          <BasketBtn />
         </div>
       </div>
 

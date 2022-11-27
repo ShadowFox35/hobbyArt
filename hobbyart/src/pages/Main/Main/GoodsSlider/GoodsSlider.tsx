@@ -30,7 +30,7 @@ const GoodsSlider: React.FC<GoodsSliderProps> = ({ goodsArray, sledeNum, setSled
       <div className="pagination-prev" onClick={() => prevSlide('prev')}></div>
       <div className="goods-slider_wrapper">
         <div className="slides" style={{ left: -299 * (sledeNum - 1) + 'px' }}>
-          {goodsArray.map((elem: GoodsSliderElemType, index: number) => (
+          {goodsArray.map((elem: GoodsSliderElemType) => (
             <div className="slides_item">
               <img src={elem.url} alt="hobby art macrametr" className="slides_item_img" />
               <div className="  slides_item_title">{elem.title}</div>

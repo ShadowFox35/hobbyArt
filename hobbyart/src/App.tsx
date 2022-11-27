@@ -9,6 +9,7 @@ import Header from './pages/Header/Header';
 import Main from './pages/Main/Main/Main';
 import Catalog from './pages/Catalog/Catalog';
 import Error from './pages/Error/Error';
+import Basket from './pages/Basket/Basket';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/catalog" element={<Catalog />} />
+        <Route path="/basket" element={<Basket />} />
         <Route path="*" element={<Error />} />
       </Routes>
 
