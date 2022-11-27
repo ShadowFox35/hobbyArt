@@ -1,0 +1,121 @@
+.basket-link {
+  text-decoration: none;
+}
+
+.basket-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 114px;
+  height: 38px;
+  background: none;
+  border: 1px solid #b2b2b2;
+  border-radius: 46px;
+  color: #b2b2b2;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  &:hover {
+    border: 1px solid #976464;
+    color: #976464;
+    cursor: pointer;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      width: 15px;
+      height: 15px;
+      margin-right: 6px;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+
+  .basket {
+    &_title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &_text {
+        font-family: 'Spectral SC', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #424242;
+      }
+      .clear {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #bdbdbd;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &_list {
+      &_item {
+        display: flex;
+
+        .item-img {
+          width: 60px;
+        }
+
+        .item-title {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          color: #424242;
+        }
+
+        .item-edit {
+          display: flex;
+          width: 80px;
+          height: 38px;
+          gap: 2px;
+          border-radius: 20px;
+          font-family: 'Montserrat';
+          color: #424242;
+          font-size: 16px;
+          letter-spacing: 1px;
+        }
+
+        .item-priсe {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          color: #424242;
+        }
+
+        .item-delete {
+          width: 30px;
+          height: 30px;
+          background-image: url('../../assets/remove_icon.svg');
+          background-repeat: no-repeat;
+          filter: invert(99%) sepia(0%) saturate(4413%) hue-rotate(162deg) brightness(117%)
+            contrast(48%);
+        }
+      }
+    }
+  }
+}

@@ -18,6 +18,7 @@ const Main: React.FC = () => {
 
   const [switchStatus, setSwitchStatus] = useState<boolean>(true);
   const [goodsArray, setGoodsArray] = useState<GoodsSliderElemType[]>(GoodsSliderNew);
+  const [sledeNum, setSledeNum] = useState<number>(1);
 
   return (
     <div className="main">
@@ -28,8 +29,9 @@ const Main: React.FC = () => {
           setSwitchStatus={setSwitchStatus}
           goodsArray={goodsArray}
           setGoodsArray={setGoodsArray}
+          sledeNum={sledeNum} setSledeNum={setSledeNum}
         />
-        <GoodsSlider switchStatus={switchStatus} goodsArray={goodsArray} />
+        <GoodsSlider switchStatus={switchStatus} goodsArray={goodsArray} sledeNum={sledeNum} setSledeNum={setSledeNum} />
         <MainCatalog />
 
         <div className="advantages">
