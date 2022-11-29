@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { goodsElemType } from '../../../types/types';
 
 import Basket from '../../../assets/basket_icon.svg';
@@ -7,9 +7,18 @@ import './Good.scss';
 
 interface propGood {
   goodElem: goodsElemType;
+  basketArray: goodsElemType[];
+  setBasketArray: Function;
 }
 
-const Good: React.FC<propGood> = ({ goodElem }) => {
+const Good: React.FC<propGood> = ({ goodElem, basketArray, setBasketArray }) => {
+  
+  const addToBasket = () => {
+    setBasketArray([...basketArray, goodElem]);
+    console.log(goodElem);
+    console.log(basketArray);
+  };
+
   return (
     <div className="good">
       <div className="good_wrapper">
@@ -27,7 +36,7 @@ const Good: React.FC<propGood> = ({ goodElem }) => {
         <div> вес: {goodElem.weight}</div>
         <div> длина нити: {goodElem.length}</div>
         <div> цена: {goodElem.price} бел.руб.</div>
-        <button className="good_btn-inactiv">
+        <button type="button" className="good_btn-inactiv" onClick={() => addToBasket()}>
           <img className="icon" src={Basket} alt="" />В корзину
         </button>
       </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import About from './pages/Main/About/About';
@@ -11,7 +11,11 @@ import Catalog from './pages/Catalog/Catalog';
 import Error from './pages/Error/Error';
 import Basket from './pages/Basket/Basket';
 
+import { goodsElemType } from './types/types';
+
 function App() {
+  const [basketArray, setBasketArray] = useState<goodsElemType[]>([]);
+
   return (
     <>
       <Header />
@@ -19,8 +23,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
-        <Route path="/catalog" element={<Catalog />} />
-        <Route path="/basket" element={<Basket />} />
+        <Route path="/catalog" element={<Catalog basketArray={basketArray} setBasketArray={setBasketArray}/>} />
+        <Route path="/basket" element={<Basket basketArray={basketArray} setBasketArray={setBasketArray}/>} />
         <Route path="*" element={<Error />} />
       </Routes>
 
