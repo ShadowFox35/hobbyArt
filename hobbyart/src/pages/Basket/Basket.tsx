@@ -21,6 +21,17 @@ const Basket: React.FC<BasketProps> = ({ basketArray, setBasketArray }) => {
     setTotalPrice(total);
   };
 
+  const clearBasket = () => {
+    setBasketArray([]);
+  };
+
+  const removeFromBasket = (url: string) => {
+    console.log('current', url);
+    const updBasketArray = basketArray.filter((good) => good.url !== url);
+    console.log('updBasketArray', updBasketArray);
+    setBasketArray(updBasketArray);
+  };
+
   useEffect(() => {
     calcTotalPrice();
   }, [basketArray]);
@@ -33,7 +44,9 @@ const Basket: React.FC<BasketProps> = ({ basketArray, setBasketArray }) => {
         <div className="basket">
           <div className="basket_title">
             <div className="basket_title_text">Моя корзина</div>
-            <div className="clear">Очистить корзину</div>
+            <div className="clear" onClick={() => clearBasket()}>
+              Очистить корзину
+            </div>
           </div>
           <div className="basket_list">
             {basketArray.map((good: goodsElemType, index: number) => (
@@ -52,7 +65,7 @@ const Basket: React.FC<BasketProps> = ({ basketArray, setBasketArray }) => {
                   <div className="item-edit_btn">+</div>
                 </button>
                 <div className="item-priсe">{`${good.price} бел. руб.`}</div>
-                <div className="item-delete"></div>
+                <div className="item-delete" onClick={() => removeFromBasket(good.url)}></div>
               </div>
             ))}
           </div>
