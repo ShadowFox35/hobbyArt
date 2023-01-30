@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Catalog.scss';
 
@@ -8,8 +8,14 @@ import { arrayOfGoods } from '../../constants/arrayOfGoods';
 
 import Good from './Goods/Good';
 
-const Catalog: React.FC = () => {
+interface CatalogProps {
+  basketArray: goodsElemType[];
+  setBasketArray: Function;
+}
+
+const Catalog: React.FC<CatalogProps> = ({ basketArray, setBasketArray }) => {
   document.title = 'Каталог товаров';
+ 
   return (
     <div className="container catalog-container">
       <nav className="catalog_navigation">
@@ -31,7 +37,7 @@ const Catalog: React.FC = () => {
         <div className="title">Популярные товары</div>
         <div className="goods-box">
           {arrayOfGoods.map((good: goodsElemType, index: number) => (
-            <Good key={index} goodElem={good} />
+            <Good key={index} goodElem={good} basketArray={basketArray} setBasketArray={setBasketArray}/>
           ))}
         </div>
       </div>

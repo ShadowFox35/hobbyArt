@@ -6,6 +6,7 @@ import './Basket.scss';
 import basket_icon from '../../assets/basket_icon.svg';
 
 const BasketBtn: React.FC = () => {
+
   return (
     <Link to="/basket" className="basket-link">
       <button className="basket-btn">
